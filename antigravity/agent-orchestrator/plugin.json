@@ -1,0 +1,13 @@
+{
+  "name": "agent-orchestrator",
+  "displayName": "Agent Orchestrator",
+  "description": "Suíte enxuta e de alta performance para orquestração de subagentes: design de planos (plan-designer), debate adversário (plan-debater), execução sequencial isolada por etapa com code review e commit atômico (plan-executor), ideação em Blackboard (idea-orchestrator), auditoria search-first de code slop (find-code-slop) e geração concorrente de 3 abordagens divergentes com artefatos dedicados e síntese inline no chat (divergent-trio).",
+  "version": "1.10.0",
+  "logo": "assets/logo.svg",
+  "suggestedPrompts": [
+    "Crie um plano técnico detalhado para uma funcionalidade usando plan-designer",
+    "Submeta este plano ao debate Red Team vs Blue Team com plan-debater",
+    "Execute sequencialmente as etapas deste plano usando plan-executor",
+    "Gere 3 exemplos ou abordagens divergentes para um problema com divergent-trio"
+  ]
+}

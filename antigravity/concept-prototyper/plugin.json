@@ -1,0 +1,12 @@
+{
+  "name": "concept-prototyper",
+  "displayName": "Concept Prototyper",
+  "description": "Estúdio de ideação e prototipagem conceitual com subagentes especializados: mockups HTML de frontend (ui-prototyper), apresentações e slides (slide-designer), documentações técnicas (doc-prototyper) e protótipos conceituais genéricos (concept-generator).",
+  "version": "1.1.0",
+  "logo": "assets/logo.svg",
+  "suggestedPrompts": [
+    "Crie 3 sugestões de frontend em HTML para a nova tela na pasta mockups/",
+    "Gere 3 propostas conceituais de documentação para a API na pasta docs/propostas/",
+    "Proponha 3 estruturas diferentes de apresentação de slides em decks/"
+  ]
+}

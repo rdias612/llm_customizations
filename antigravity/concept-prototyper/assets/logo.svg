@@ -1,0 +1,56 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128" width="128" height="128">
+  <defs>
+    <linearGradient id="grad1" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#38bdf8" />
+      <stop offset="100%" stop-color="#2563eb" />
+    </linearGradient>
+    <linearGradient id="grad2" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#a855f7" />
+      <stop offset="100%" stop-color="#6366f1" />
+    </linearGradient>
+    <linearGradient id="grad3" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#34d399" />
+      <stop offset="100%" stop-color="#059669" />
+    </linearGradient>
+    <filter id="shadow" x="-10%" y="-10%" width="130%" height="130%">
+      <feDropShadow dx="0" dy="4" stdDeviation="3" flood-opacity="0.25" />
+    </filter>
+  </defs>
+  
+  <!-- Fundo sutil de tela de prototipagem -->
+  <rect x="14" y="14" width="100" height="100" rx="20" fill="none" stroke="#64748b" stroke-width="1.5" stroke-dasharray="4 4" opacity="0.4" />
+
+  <!-- Card 3: Inovador / Verde Esmeralda (Traseiro Esquerdo) -->
+  <g transform="rotate(-12 40 70)" filter="url(#shadow)">
+    <rect x="22" y="38" width="46" height="58" rx="8" fill="url(#grad3)" />
+    <!-- Elementos visuais internos -->
+    <rect x="28" y="46" width="20" height="4" rx="2" fill="#ffffff" opacity="0.9" />
+    <rect x="28" y="54" width="34" height="14" rx="3" fill="#ffffff" opacity="0.4" />
+    <circle cx="34" cy="78" r="4" fill="#ffffff" opacity="0.8" />
+    <rect x="42" y="76" width="20" height="4" rx="2" fill="#ffffff" opacity="0.6" />
+  </g>
+
+  <!-- Card 2: Robusto / Roxo Índigo (Traseiro Direito) -->
+  <g transform="rotate(12 88 70)" filter="url(#shadow)">
+    <rect x="60" y="38" width="46" height="58" rx="8" fill="url(#grad2)" />
+    <!-- Elementos visuais internos -->
+    <rect x="66" y="46" width="24" height="4" rx="2" fill="#ffffff" opacity="0.9" />
+    <rect x="66" y="54" width="34" height="4" rx="2" fill="#ffffff" opacity="0.5" />
+    <rect x="66" y="62" width="28" height="4" rx="2" fill="#ffffff" opacity="0.5" />
+    <rect x="66" y="74" width="34" height="12" rx="3" fill="#ffffff" opacity="0.4" />
+  </g>
+
+  <!-- Card 1: Frontal Central / Azul Celeste (Principal) -->
+  <g filter="url(#shadow)">
+    <rect x="38" y="30" width="52" height="66" rx="9" fill="url(#grad1)" stroke="#ffffff" stroke-width="1.5" />
+    <!-- Header do Mockup -->
+    <circle cx="46" cy="38" r="2.5" fill="#ffffff" opacity="0.9" />
+    <circle cx="53" cy="38" r="2.5" fill="#ffffff" opacity="0.6" />
+    <circle cx="60" cy="38" r="2.5" fill="#ffffff" opacity="0.6" />
+    <!-- Layout de Tela -->
+    <rect x="44" y="46" width="40" height="18" rx="4" fill="#ffffff" opacity="0.85" />
+    <!-- Componentes de UI -->
+    <rect x="44" y="69" width="18" height="18" rx="4" fill="#ffffff" opacity="0.4" />
+    <rect x="66" y="69" width="18" height="18" rx="4" fill="#ffffff" opacity="0.4" />
+  </g>
+</svg>
