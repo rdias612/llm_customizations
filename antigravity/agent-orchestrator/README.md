@@ -1,9 +1,9 @@
-# Agent Orchestrator Plugin (v1.10.0)
+# Agent Orchestrator Plugin (v1.11.0)
 
 Plugin para Antigravity que fornece uma suíte enxuta e otimizada em consumo de contexto e velocidade para o ciclo de desenvolvimento com subagentes:
 
 1. **Design de Planos e Triagem Adaptativa (`plan-designer`)**: Analisa requisitos e contratos reais no código via busca nativa (`grep_search` / `find_by_name`). Em demandas padrão, decompõe a solução em etapas atômicas sequenciais com verificação polimórfica por etapa (`plans/<slug>.md`); em micro-tarefas ($\le 2$ arquivos), oferece o **Fast-Track** sob confirmação do usuário.
-2. **Debate Adversário em *Blackboard* (`plan-debater`)**: Submete o plano a um debate rigoroso em `discussao/<slug>/` entre Red Team (`plan-red-team`) e Blue Team (`plan-blue-team`), julgado por um Árbitro Neutro (`plan-referee`) que filtra abstrações e escalas irreais, consolidando críticas aceitas vs. ignoradas com aplicação interativa no plano via `ask_question`.
+2. **Debate Adversário em *Blackboard* (`plan-debater`)**: Submete o plano a um debate rigoroso em `discussao/<slug>/` entre Red Team (`plan-red-team`) e Blue Team (`plan-blue-team`), julgado por um Árbitro Neutro (`plan-referee`) que filtra abstrações e escalas irreais, gerando um artefato nativo de visualização no Antigravity com links clicáveis para os relatórios de `discussao/` e consolidando críticas aceitas vs. ignoradas com opções contextualizadas e aplicação interativa via `ask_question`.
 3. **Execução de Planos (`plan-executor`)**: Consome o arquivo do plano por referência, orquestra os subagentes `code-implementer` e `code-reviewer` com isolamento estrito por etapa (reutilizando a sessão via `send_message` apenas dentro do loop de ajustes da etapa e encerrando-a com `manage_subagents(Action="kill")` ao aprovar), atualiza o checklist (`- [x]`), executa o **Git Step Committer** (commit semântico atômico com título da etapa e descrição resumida do que foi feito), oferece **Rollback Cirúrgico** / **Re-anchoring Assistido** em caso de bloqueio e fecha o ciclo com o **End-of-Plan Gatekeeper** (validação de build global + resumo de PR inline).
 4. **Ideação em *Blackboard* (`idea-orchestrator`)**: Pipeline de exploração (`project-explorer` em 2 camadas compactas), ideação em 3 eixos ortogonais (`feature-ideator`) e avaliação crítica (`feature-evaluator`) onde cada subagente lê e grava diretamente em `docs/ideation_report.md`, poupando >90% da janela de contexto do orquestrador.
 5. **Auditoria e Limpeza de Code Slop (`find-code-slop`)**: Delega a varredura *search-first* e *tool-assisted* (com `grep_search`, linters estáticos nativos, *safe-list* anti-falso-positivo, modo delta e persistência em *Blackboard* para repositórios inteiros) de falhas silenciosas, *escape hatches* de tipagem, *test slop*, dead code e abstrações prematuras ao `code-slop-auditor`, orquestrando a limpeza aprovada via `ask_question` com o `code-implementer`.
@@ -51,7 +51,7 @@ flowchart TD
 
 ## Estrutura do Pacote
 
-- `plugin.json`: Manifesto do plugin (v1.10.0).
+- `plugin.json`: Manifesto do plugin (v1.11.0).
 - `rules/AGENTS.md`: Regra enxuta ativa enquanto o plugin estiver habilitado.
 - **Skills (`skills/`)**:
   - `plan-designer/SKILL.md`: Concepção e criação de planos com validação de contratos e verificação por etapa.
