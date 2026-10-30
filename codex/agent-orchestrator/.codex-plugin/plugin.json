@@ -1,0 +1,21 @@
+{
+  "name": "agent-orchestrator-codex",
+  "version": "1.0.0",
+  "description": "Planejamento, debate técnico, execução por etapas, ideação, auditoria de code slop e três soluções divergentes com subagentes do Codex.",
+  "skills": "./skills/",
+  "interface": {
+    "displayName": "Agent Orchestrator (Codex)",
+    "shortDescription": "Planeje, debata, execute e revise com subagentes",
+    "longDescription": "Adaptação para Codex do Agent Orchestrator 1.11.0: seis skills e dez papéis carregados por referência, relatórios Markdown e revisão por etapa.",
+    "category": "Productivity",
+    "capabilities": ["Read", "Write"],
+    "composerIcon": "./assets/logo.svg",
+    "logo": "./assets/logo.svg",
+    "defaultPrompt": [
+      "Use plan-designer para criar um plano técnico com etapas verificáveis.",
+      "Use plan-debater para debater este plano com Red Team, Blue Team e árbitro.",
+      "Use plan-executor para executar este plano com revisão por etapa.",
+      "Use divergent-trio para gerar três abordagens e comparar os trade-offs."
+    ]
+  }
+}

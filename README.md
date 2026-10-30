@@ -8,5 +8,5 @@ Repositório de customizações (instruções, agentes, skills e plugins) para d
 | --- | --- | --- |
 | [antigravity/README.MD](antigravity/README.MD) | Antigravity | Com conteúdo: plugins `agent-orchestrator` e `concept-prototyper` |
 | [copilot/README.md](copilot/README.md) | GitHub Copilot | Sem customizações ainda |
-| [codex/README.md](codex/README.md) | Codex | Sem customizações ainda |
+| [codex/README.md](codex/README.md) | Codex | Com conteúdo: plugin `agent-orchestrator` |
 | [zcode/README.md](zcode/README.md) | ZCode | Sem customizações ainda |
